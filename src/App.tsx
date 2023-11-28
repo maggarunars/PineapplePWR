@@ -3,21 +3,22 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player'
 import { transform } from 'typescript';
 import { CSSProperties } from 'styled-components';
 import styled from 'styled-components';
+import "./App.css"
 
+//This is a container for the background
 const PageContainer = styled.div` 
   background-color: green;
   height: 100vh;
   ;
 `
+//
 const Header = styled.h1`
+  font-family: "Regular";
   font-size: 40px;
   color: white;
   text-align: center;
   ;
 `
-
-
-
 function App() {
 
   const packageStyle:CSSProperties = {
@@ -29,7 +30,8 @@ function App() {
 return (
   <PageContainer>
 <div>
-  <h1>Christmas Calendar</h1> 
+  <Header>Christmas Calendar</Header> 
+  {/*Here below are the packages, the "id" shows the coherent number*/}
 <div><Player src="https://lottie.host/61ebe620-1145-4c71-9f7c-2ab81571279c/TfFF31xSQN.json" id = "19" style={{...packageStyle, left: 150, top: 128, height: '100px', width: '100px'}} loop autoplay></Player></div>
 <div><Player src="https://lottie.host/884469d3-2369-41f7-8d92-3d9ac135b6b8/gQvFykTktz.json" id = "11" style={{...packageStyle, left: 140.95, top: 212.48, height: '62.25px', width: '68.63px'}} loop autoplay>  </Player> </div>
 <div><Player src="https://lottie.host/58112e4f-d916-4e38-80f9-7619a545b024/GMuMYLVC7V.json" id = "6" style={{...packageStyle, left: 181, top: 221, height: '90.07px', width: '100.45px'}} loop autoplay> </Player></div>
