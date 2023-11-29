@@ -8,6 +8,7 @@ import supabase from './supabaseClient';
 import { useEffect,useState } from 'react';
 import Wishes from './Components/Wishes';
 import "./App.css"
+import Christmaslights from './Christmaslights';
 
 //This is a styled container for the background
 const PageContainer = styled.div` 
@@ -71,10 +72,12 @@ const TreeSection6 = styled.div`
 function App() {
 
   
-
+const lights = new Array(100).fill(undefined)
+console.log(lights)
 return (
   <PageContainer>
-      <Wishes/>
+    {lights.map(light=><Christmaslights/>)}
+
 <Header>Christmas Calendar</Header> 
 <TreeContainer>
   
