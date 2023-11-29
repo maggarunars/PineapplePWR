@@ -3,19 +3,22 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player'
 import { transform } from 'typescript';
 import { CSSProperties } from 'styled-components';
 import styled from 'styled-components';
+import ChristmasWindowClosed from './Components/ChristmasWindowClosed';
+import supabase from './supabaseClient';
+import { useEffect,useState } from 'react';
+import Wishes from './Components/Wishes';
 
-const PageContainer = styled.div` 
+const PageContainer = styled.div`
   background-color: green;
   height: 100vh;
-  ;
+  filter: blur();
 `
 const Header = styled.h1`
   font-size: 40px;
   color: white;
   text-align: center;
-  ;
-`
 
+`
 
 
 function App() {
@@ -29,6 +32,7 @@ function App() {
 return (
   <PageContainer>
 <div>
+  <Wishes/>
   <h1>Christmas Calendar</h1> 
 <div><Player src="https://lottie.host/61ebe620-1145-4c71-9f7c-2ab81571279c/TfFF31xSQN.json" id = "19" style={{...packageStyle, left: 150, top: 128, height: '100px', width: '100px'}} loop autoplay></Player></div>
 <div><Player src="https://lottie.host/884469d3-2369-41f7-8d92-3d9ac135b6b8/gQvFykTktz.json" id = "11" style={{...packageStyle, left: 140.95, top: 212.48, height: '62.25px', width: '68.63px'}} loop autoplay>  </Player> </div>
@@ -54,9 +58,9 @@ return (
 <div><Player src="https://lottie.host/d7ea6b5b-f389-4b87-b96c-cd3097e49117/kg7gIc0bO7.json" id ="7"style={{...packageStyle, left: 300, top: 608, height: '86.19px', width: '70.25px'}} loop autoplay> </Player></div>
 <div><Player src="https://lottie.host/f364b201-5bdc-4c96-9657-27a442ef7694/1gC5gQvcJv.json" id ="3--"style={{...packageStyle, left: 6, top: 608, height: '86.19px', width: '70.25px'}} loop autoplay> </Player></div>
 <div><Player src="https://lottie.host/c341e895-55a9-4b8b-9dff-1a8e6cac377f/rn0n3TwB4A.json" id ="12"style={{...packageStyle, left: 155, top: 709, height: '105.58px', width: '81px'}} loop autoplay> </Player></div>
-
   </div>
   </PageContainer>
+  
 )
 
 
