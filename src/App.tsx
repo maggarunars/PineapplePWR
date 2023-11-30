@@ -68,7 +68,7 @@ return (
   
   {/*Here below are the packages, the "id" shows the number on the packages*/}
 <TreeSection>
-<Player src="https://lottie.host/61ebe620-1145-4c71-9f7c-2ab81571279c/TfFF31xSQN.json" id = "19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay></Player>
+<Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id = "19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay></Player>
 </TreeSection> 
 
 <TreeSection>
@@ -78,7 +78,7 @@ return (
 
 <TreeSection>
 <Player src="https://lottie.host/b0d6806a-f514-4e80-a442-1afe25dea8ea/GNQEkxmjqu.json" id = "23" style={{transform: 'translate(20px, -40px)'}} loop autoplay> </Player>
-<Player src="https://lottie.host/db314b24-86cb-45db-bae8-035a45210296/i2dcvJMGUL.json" id = "1" style={{transform: 'translate(5px, 3px)'}} loop autoplay> </Player>
+<Player src="https://lottie.host/f12f27df-00d4-4886-93dd-cfd615e00578/hWrjX2hhoZ.json" id = "1" style={{transform: 'translate(5px, 3px)'}} loop autoplay> </Player>
 <Player src="https://lottie.host/06c0091d-1f7a-4af0-bd07-3e604b56ba5d/YNUqgxXc5H.json" id = "20"style={{transform: 'translate(0px, -40px)'}} loop autoplay> </Player>
 
 </TreeSection>
@@ -106,7 +106,7 @@ return (
 <Player src="https://lottie.host/1b36357d-4902-40ad-9c84-a6fedd8157a5/g5PWEne1WV.json" id ="16" style={{transform: 'translate(-15px, -90px)', height: '75.86px', width: '82px'}} loop autoplay> </Player>
 <Player src="https://lottie.host/deab3c66-4100-43e6-aad9-7e3cb4645d9d/Ze4g6eAjZ9.json" id ="18" style={{transform: 'translate(-10px, -90px)', height: '80.19px', width: '77px'}} loop autoplay> </Player>
 <Player src="https://lottie.host/859c117b-6e48-4891-926e-dcec4f324fd2/38wmyR2HMX.json" id ="14" style={{transform: 'translate(-12px, -100px)', height: '86px', width: '86px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/6a8cdd8c-13de-4848-8d7d-7da509594e76/1OWh50P7VI.json" id ="21" style={{transform: 'translate(-20px, -70px)', height: '51px', width: '75.62px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/7e1e4b50-28f5-4af3-b95f-4fa02545b05b/ZAcU9QVyVR.json" id ="21" style={{transform: 'translate(-20px, -70px)', height: '51px', width: '75.62px'}} loop autoplay> </Player>
 </TreeSection>
 
 
