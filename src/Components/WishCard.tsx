@@ -13,13 +13,12 @@ const Container = styled.div`
   box-sizing: border-box;
   border-radius: 6px;
   position: relative;
-  
 `
+
 const WishCard = ({wish}:{wish:Wish}) =>{
     return(
         <Container>
             <h3>{wish.description}</h3>
-
         </Container>
     )
 }

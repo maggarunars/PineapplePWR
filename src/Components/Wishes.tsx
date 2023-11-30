@@ -33,21 +33,22 @@ const Wishes = () =>{
         fetchWishes()
     }, [])
 
-const randomWish = Math.floor(Math.random()*wishes.length)
-console.log(wishes)
-return(
-    //template if there error or we have wish it will gave us output, I need to map through wishes.
-<div className='Wishes'>
-    {fetchError && (<p>{fetchError}</p>)}
-    {wishes.length && (
-        <div className="Wishes">
-          <WishCard wish={wishes[randomWish]}/>
+    const randomWish = Math.floor(Math.random()*wishes.length)
+    console.log(wishes)
+    return(
+        //template if there error or we have wish it will gave us output, I need to map through wishes.
+        <div className='Wishes'>
+            {fetchError && (<p>{fetchError}</p>)}
+            {wishes.length && (
+                <div className="Wishes">
+                <WishCard wish={wishes[randomWish]}/>
 
+                </div>
+            )}
         </div>
-    )}
-</div>
-)
+    )
 }
+
 export default Wishes
 
 // seems like I need to have this in App.tsx so I can have <WishesCard key={Wishes.id} --and pass prop-- Wishes{Wishes}
