@@ -13,8 +13,8 @@ const Dot = styled.div`
 	border-radius: 50%;
 	/* below is the line that makes that makes the lights spread randomly accross the screen using the width and height of the screen */
 	transform: translate(${Math.floor(Math.random()*window.innerWidth)}px, ${Math.floor(Math.random()*window.innerHeight)}px);
-	animation: ${blink} ${Math.random()*4+1}s linear infinite;
-	/* filter: blur(4px); */
+	animation: ${blink} ${Math.random()*4+2}s linear infinite;
+	/* filter: blur(2px); */
 `
 /* colors of the christmas lights */
 const Green = styled(Dot)`

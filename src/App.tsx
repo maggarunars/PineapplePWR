@@ -11,17 +11,26 @@ import SantsHatSvg from "./Images/SantasHatSvg.svg"
 //This is a styled container for the background
 const PageContainer = styled.div` 
   background: radial-gradient(#558E47, #17230D);
-  height: 96vh;
+  height: 100vh;
   filter: blur();
+  position: relative;
+`
+const Padding = styled.div`
+background: none;
+height: 48px;
+position: static;
+top: 0;
+width: 100%;
 `
 const Footer = styled.div`
     background: none;
-    height: 4vh;
+    height: 72px;
     filter: blur();
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     overflow: hidden;
+    z-index: -1;
 `
 
 //This is a style component for the Header
@@ -57,12 +66,13 @@ right: 0;
 function App() {
 
   // adding 100 lights accross the screen
-const lights = new Array(150).fill(undefined)
-const footerLights = new Array (500).fill(undefined)
+const lights = new Array(116).fill(undefined)
+const footerLights = new Array (640).fill(undefined)
 console.log(lights)
 return (
   <PageContainer>
     {lights.map(light=><Christmaslights/>)}
+  <Padding></Padding>
 <Header>Christmas Calendar</Header> 
 <TreeContainer>
   
