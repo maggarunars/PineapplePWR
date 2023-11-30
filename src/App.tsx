@@ -13,9 +13,19 @@ import Christmaslights from './Christmaslights';
 //This is a styled container for the background
 const PageContainer = styled.div` 
   background: radial-gradient(#558E47, #17230D);
-  height: 100vh;
+  height: 96vh;
   filter: blur();
 `
+const Footer = styled.div`
+    background: none;
+    height: 4vh;
+    filter: blur();
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+`
+
 //This is a style component for the Header
 const Header = styled.h1`
   font-family: "Regular";
@@ -71,13 +81,13 @@ const TreeSection6 = styled.div`
 
 function App() {
 
-  
-const lights = new Array(100).fill(undefined)
+  // adding 100 lights accross the screen
+const lights = new Array(150).fill(undefined)
+const footerLights = new Array (500).fill(undefined)
 console.log(lights)
 return (
   <PageContainer>
     {lights.map(light=><Christmaslights/>)}
-
 <Header>Christmas Calendar</Header> 
 <TreeContainer>
   
@@ -134,6 +144,11 @@ return (
 <div><Player src="https://lottie.host/c341e895-55a9-4b8b-9dff-1a8e6cac377f/rn0n3TwB4A.json" id ="12" style={{transform: 'translate(5px, -65px)', height: '105.58px', width: '81px'}} loop autoplay> </Player></div>
 
   </TreeContainer>
+
+<Footer>
+    {footerLights.map(light=><Christmaslights/>)}
+</Footer>
+
   </PageContainer>
   
 )
