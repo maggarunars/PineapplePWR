@@ -53,51 +53,51 @@ return (
 </TreeSection> 
 
 <TreeSection>
-<Player src="https://lottie.host/884469d3-2369-41f7-8d92-3d9ac135b6b8/gQvFykTktz.json" id = "11" style={{transform: 'translate(10px, -20px)', height: '80px', width: '80px'}} loop autoplay>  </Player> 
-<Player src="https://lottie.host/58112e4f-d916-4e38-80f9-7619a545b024/GMuMYLVC7V.json" id = "6" style={{transform: 'translate(-12px, -5px)', height: '90.07px', width: '100.45px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/cb24d26f-5552-4644-8810-90faa9988734/Y2P43K5fyA.json" id = "11" style={{transform: 'translate(10px, -20px)', height: '80px', width: '80px'}} loop autoplay>  </Player> 
+<Player src="https://lottie.host/5a391053-176c-446b-8d6e-06c26f6521f1/L4Bu7IHXNX.json" id = "6" style={{transform: 'translate(-12px, -5px)', height: '90.07px', width: '100.45px'}} loop autoplay> </Player>
 </TreeSection>
 
 <TreeSection>
-<Player src="https://lottie.host/87177151-ea18-483d-9aab-349aea2d529a/fSSbq2OteE.json" id = "23" style={{transform: 'translate(20px, -40px)'}} loop autoplay> </Player>
-<Player src="https://lottie.host/c47df01e-6f3d-4b08-a35c-a7ba89e974b4/8tujcNBQeq.json" id = "1" style={{transform: 'translate(5px, 3px)'}} loop autoplay> </Player>
-<Player src="https://lottie.host/9785eb1f-6cb0-4959-be10-48b1028dd54a/EqjawmWaaT.json" id = "20"style={{transform: 'translate(0px, -40px)'}} loop autoplay> </Player>
+<Player src="https://lottie.host/b0d6806a-f514-4e80-a442-1afe25dea8ea/GNQEkxmjqu.json" id = "23" style={{transform: 'translate(20px, -40px)'}} loop autoplay> </Player>
+<Player src="https://lottie.host/db314b24-86cb-45db-bae8-035a45210296/i2dcvJMGUL.json" id = "1" style={{transform: 'translate(5px, 3px)'}} loop autoplay> </Player>
+<Player src="https://lottie.host/06c0091d-1f7a-4af0-bd07-3e604b56ba5d/YNUqgxXc5H.json" id = "20"style={{transform: 'translate(0px, -40px)'}} loop autoplay> </Player>
 
-</TreeSection>
-
-
-<TreeSection>
-<Player src="https://lottie.host/389e1276-1a51-4d5a-9b1f-080a98b55ec0/uZ2oezPboU.json" id = "2" style={{transform: 'translate(0px, -60px)', height: '76px', width: '76px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/1200bdb6-b66a-466f-9913-1d0c3ef080f5/YZka3a88Aq.json" id ="15"style={{transform: 'translate(-10px, -50px)', height: '90.96px', width: '93.5px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/dd4f3c96-d7ff-4dac-ab95-8c99df8cb9e5/fmDb4A04xg.json" id ="8"style={{transform: 'translate(0px, -40px)', height: '75.47px', width: '58.5px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/4327f0e8-6e65-4cd9-937a-d6497ac1ce9c/nT6DVajsMh.json" id ="10" style={{transform: 'translate(-14px, -75px)', height: '80px', width: '75.62px'}} loop autoplay> </Player>
 </TreeSection>
 
 
 <TreeSection>
-<Player src="https://lottie.host/b00be1b5-3276-42a4-a992-e748e65422f1/eHj8o5DpXc.json" id ="22" style={{transform: 'translate(50px, -75px)', height: '77px', width: '65.58px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/934f6ee4-3714-4639-8f29-b9e1e461cf0d/uIwUFgdgYR.json" id ="17" style={{transform: 'translate(40px, -55px)', height: '100px', width: '90px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/84b73c15-9b1b-4b25-a123-2d3590f60ebb/KXKGGq3oRD.json" id ="5" style={{transform: 'translate(15px, -50px)', height: '100px', width: '100px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/638b3e59-7eb1-4cbc-9977-d5a7155e262b/ftt937kGkB.json" id ="4" style={{transform: 'translate(-10px, -60px)', height: '100px', width: '90px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/138aed7c-8f18-470e-b4c0-0fb4a45f8e64/G5465ea5LF.json" id ="13" style={{transform: 'translate(-40px, -80px)', height: '120px', width: '120px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/7ec47a75-0475-4ed9-bfd9-506e59022a6a/3EjBW6lDaN.json" id = "2" style={{transform: 'translate(0px, -60px)', height: '76px', width: '76px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/f2edc222-a1bc-452c-a6aa-8b6e6e8203e5/O6T80BzrjX.json" id ="15"style={{transform: 'translate(-10px, -50px)', height: '90.96px', width: '93.5px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/629f4696-2aae-4713-a6d0-87838d5746f4/FhPlHoa3bY.json" id ="8"style={{transform: 'translate(0px, -40px)', height: '75.47px', width: '58.5px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/96d129f8-3e05-41f0-8043-d4891ddf6444/H88DGBOEb6.json" id ="10" style={{transform: 'translate(-14px, -75px)', height: '80px', width: '75.62px'}} loop autoplay> </Player>
 </TreeSection>
 
 
 <TreeSection>
-<Player src="https://lottie.host/adb82a2b-3f07-448b-8b1a-47a7f39e2d41/Z5fTFhAc9c.json" id ="9" style={{transform: 'translate(10px, -120px)', height: '100px', width: '90px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/da63c2ba-f302-483d-9194-f22f9f66e447/2Zd5z15noB.json" id ="16" style={{transform: 'translate(-15px, -90px)', height: '75.86px', width: '82px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/d72653cc-04d1-4a02-a8cd-1c263bce984a/B2fPwXmOGP.json" id ="18" style={{transform: 'translate(-10px, -90px)', height: '80.19px', width: '77px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/7dfa5472-9042-42f1-9862-f5513ca176b2/VmxESjoNl9.json" id ="14" style={{transform: 'translate(-12px, -100px)', height: '86px', width: '86px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/d0a5d8c1-fdba-41c0-9572-6d36945591f6/XtzySOONaT.json" id ="22" style={{transform: 'translate(50px, -75px)', height: '77px', width: '65.58px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/7468e4fd-5c30-4edd-9dff-dbd5e4df0a1f/hvEKTtTrEb.json" id ="17" style={{transform: 'translate(40px, -55px)', height: '100px', width: '90px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/b95a367a-b325-43bb-81e8-c42846eddb8d/aM3i60ftAB.json" id ="5" style={{transform: 'translate(15px, -50px)', height: '100px', width: '100px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/e8b8bc0c-167b-4286-a991-09c4b14c51a8/s1zTqBklq7.json" id ="4" style={{transform: 'translate(-10px, -60px)', height: '100px', width: '90px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/ad7c12cb-5add-4343-b38c-759b0e2a3a8e/bd2GyxcDgN.json" id ="13" style={{transform: 'translate(-40px, -80px)', height: '120px', width: '120px'}} loop autoplay> </Player>
+</TreeSection>
+
+
+<TreeSection>
+<Player src="https://lottie.host/284aa806-ad8a-41ec-a2b0-2d9597643da3/XrSYPHT3s7.json" id ="9" style={{transform: 'translate(10px, -120px)', height: '100px', width: '90px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/1b36357d-4902-40ad-9c84-a6fedd8157a5/g5PWEne1WV.json" id ="16" style={{transform: 'translate(-15px, -90px)', height: '75.86px', width: '82px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/deab3c66-4100-43e6-aad9-7e3cb4645d9d/Ze4g6eAjZ9.json" id ="18" style={{transform: 'translate(-10px, -90px)', height: '80.19px', width: '77px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/859c117b-6e48-4891-926e-dcec4f324fd2/38wmyR2HMX.json" id ="14" style={{transform: 'translate(-12px, -100px)', height: '86px', width: '86px'}} loop autoplay> </Player>
 <Player src="https://lottie.host/6a8cdd8c-13de-4848-8d7d-7da509594e76/1OWh50P7VI.json" id ="21" style={{transform: 'translate(-20px, -70px)', height: '51px', width: '75.62px'}} loop autoplay> </Player>
 </TreeSection>
 
 
 <TreeSection>
-<Player src="https://lottie.host/f364b201-5bdc-4c96-9657-27a442ef7694/1gC5gQvcJv.json" id ="3" style={{transform: 'translate(0px, -130px)', height: '97.31px', width: '59px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/6f929d97-3310-4651-964c-4af566836374/kHRVatIruI.json" id ="3" style={{transform: 'translate(0px, -130px)', height: '97.31px', width: '59px'}} loop autoplay> </Player>
 <Player src="https://lottie.host/65ed3cca-bb61-4aeb-bbf1-f338812530a9/TDUnQCgymB.json" id ="24" style={{transform: 'translate(15px, -115px)', height: '93.61px', width: '222.27px'}} loop autoplay> </Player>
-<Player src="https://lottie.host/d7ea6b5b-f389-4b87-b96c-cd3097e49117/kg7gIc0bO7.json" id ="7" style={{transform: 'translate(10px, -125px)', height: '86.19px', width: '70.25px'}} loop autoplay> </Player>
+<Player src="https://lottie.host/7436dfbc-f679-427b-861b-451daf26f1ea/aSZsZeEJuc.json" id ="7" style={{transform: 'translate(10px, -125px)', height: '86.19px', width: '70.25px'}} loop autoplay> </Player>
 </TreeSection>
 
-<Player src="https://lottie.host/c341e895-55a9-4b8b-9dff-1a8e6cac377f/rn0n3TwB4A.json" id ="12" style={{transform: 'translate(5px, -120px)', height: '105.58px', width: '81px'}} loop autoplay></Player>
+<Player src="https://lottie.host/91057d8f-832d-49eb-a6c7-67ca8e118b09/4K0HchApaR.json" id ="12" style={{transform: 'translate(5px, -120px)', height: '105.58px', width: '81px'}} loop autoplay></Player>
 <SantasHat><img src={SantsHatSvg} alt ="Logo of Santa's Hat to access filters"></img></SantasHat>
 
   </TreeContainer>
