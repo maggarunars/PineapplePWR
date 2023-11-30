@@ -1,12 +1,18 @@
 import { Player, } from '@lottiefiles/react-lottie-player'
 import styled from 'styled-components';
+import ChristmasWindowClosed from './Components/ChristmasWindowClosed';
+import supabase from './supabaseClient';
+import { useEffect,useState } from 'react';
+import Wishes from './Components/Wishes';
 import "./App.css"
+import Christmaslights from './Christmaslights';
 import SantsHatSvg from "./Images/SantasHatSvg.svg"
 
 //This is a styled container for the background
 const PageContainer = styled.div` 
   background: radial-gradient(#558E47, #17230D);
-  
+  height: 100vh;
+  filter: blur();
 `
 //This is a style component for the Header
 const Header = styled.h1`
@@ -41,9 +47,12 @@ right: 0;
 function App() {
 
   
-
+const lights = new Array(100).fill(undefined)
+console.log(lights)
 return (
   <PageContainer>
+    {lights.map(light=><Christmaslights/>)}
+
 <Header>Christmas Calendar</Header> 
 <TreeContainer>
   
@@ -102,6 +111,7 @@ return (
 
   </TreeContainer>
   </PageContainer>
+  
 )
 
 
