@@ -9,8 +9,6 @@ export type Wish = {
     description: string;
 }
 
-
-
 const supabaseUrl = 'https://auhpdielrdyucfnebizd.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1aHBkaWVscmR5dWNmbmViaXpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDExODE2MzMsImV4cCI6MjAxNjc1NzYzM30.FqBm_Z7BTQk9lNLTx9XblL9mtfl-LnvkCaazFAJKPAw'
 export const supabase = createClient(supabaseUrl, supabaseKey);

@@ -1,8 +1,11 @@
 import {Green, Pink, Blue, Yellow, Purple, Red} from './LightStyles'
 
-// Dots for the christmas lights
-const Christmaslights = () => {
+type Props = {
+	height:number
+}
 
+// Dots for the christmas lights
+const Christmaslights = ({height}:Props) => {
 /* randomizing what colors are on the dots */
 	const colors =[ Green, Blue, Purple, Yellow, Pink, Red ]
 	const Light = colors[Math.floor(Math.random()*colors.length)]
@@ -10,7 +13,7 @@ const Christmaslights = () => {
     	<>
 			<Light
 				$rLeft={Math.floor(Math.random()*window.innerWidth)}
-				$rRight={Math.floor(Math.random()*window.innerHeight)}
+				$rRight={height}
 				$rTime={Math.random()*4+2}>
 			</Light>
 		</>

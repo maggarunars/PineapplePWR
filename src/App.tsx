@@ -85,7 +85,7 @@ function App() {
 
   return (
     <PageContainer>
-        {lights.map((light, i)=><div key={i}><Christmaslights/></div>)}
+        {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
         {isOpen && (
           <Overlay onClick={() => handleCloseWish()}>
             <Wishes></Wishes>
@@ -136,7 +136,7 @@ function App() {
         <SantasHat><img src={SantsHatSvg} alt ="Logo of Santa's Hat to access filters"></img></SantasHat>
       </TreeContainer>
       <Footer>
-        {footerLights.map((light, i)=><div key={i}><Christmaslights/></div>)}
+        {footerLights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*72)}/></div>)}
       </Footer>
     </PageContainer>
   )
