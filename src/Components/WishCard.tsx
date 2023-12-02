@@ -7,21 +7,20 @@ type Wish = {
 
 // const WishesCard
 const Container = styled.div`
-  width: 100%;
   padding: 10px;
   background: yellow;
-  box-sizing: border-box;
   border-radius: 6px;
-  position: relative;
-  
+  position: absolute;
+  z-index: 900;
+  margin: auto;
 `
+
 const WishCard = ({wish}:{wish:Wish}) =>{
     return(
         <Container>
             <h3>{wish.description}</h3>
-
         </Container>
     )
 }
 
-export default WishCard
+export default WishCard;
