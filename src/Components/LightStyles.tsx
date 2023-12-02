@@ -1,6 +1,6 @@
-import styled, {keyframes} from "styled-components"
+import styled, {keyframes} from 'styled-components'
 
-const blink = keyframes `
+const blink = keyframes`
     0% { background-color: #FFFFFF; opacity: 0; }
     50% { opacity: 1; }
     100% { opacity: 0; }
@@ -21,26 +21,31 @@ const Green = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
 `
+
 const Pink = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#F69FF3;
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
 `
+
 const Blue = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#6BBAE7;
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
 `
+
 const Yellow = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#F7D137;
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
 `
+
 const Purple = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#8C43B7;
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
 `
+
 const Red = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#F7505A;
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);

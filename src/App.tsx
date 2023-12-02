@@ -1,9 +1,9 @@
 import { Player } from '@lottiefiles/react-lottie-player'
 import styled from 'styled-components';
-import { useState } from 'react';
-import "./App.css"
+import { useState, CSSProperties } from 'react';
+import './App.css'
 import Christmaslights from './Components/Christmaslights';
-import SantsHatSvg from "./Images/SantasHatSvg.svg"
+import SantsHatSvg from './Images/SantasHatSvg.svg'
 import Wishes from './Components/Wishes';
 
 //This is a styled container for the background
@@ -81,7 +81,7 @@ function App() {
 
   // adding lights accross the screen
   const lights = new Array(116).fill(undefined)
-  const footerLights = new Array (640).fill(undefined)
+  const footerLights = new Array (200).fill(undefined)
 
   return (
     <PageContainer>

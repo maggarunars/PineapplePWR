@@ -1,8 +1,6 @@
-import { type } from "os";
 import { createClient } from '@supabase/supabase-js';
-import { useEffect,useState } from "react";
-import WishCard from "./WishCard";
-import styled from "styled-components";
+import { useEffect,useState } from 'react';
+import WishCard from './WishCard';
 
 export type Wish = {
     id: number;
@@ -50,7 +48,7 @@ const Wishes = () => {
 
     return (
         //template if there error or we have wish it will gave us output, I need to map through wishes.
-        <div className='Wishes' style={{margin: 'auto', position: 'absolute'}}>
+        <div className='Wishes' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
             {fetchError && <p>{fetchError}</p>}
             {wishes.length > 0 && (
                 <div className='Wishes'>
