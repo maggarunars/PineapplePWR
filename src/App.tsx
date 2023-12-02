@@ -104,13 +104,13 @@ function App() {
         </TreeSection>
         <TreeSection>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/b0d6806a-f514-4e80-a442-1afe25dea8ea/GNQEkxmjqu.json" id="23" style={{transform: 'translate(20px, -40px)'}} loop autoplay></Player></div>
-          <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/f12f27df-00d4-4886-93dd-cfd615e00578/hWrjX2hhoZ.json" id="1" style={{transform: 'translate(5px, 3px)'}} loop autoplay></Player></div>
+          <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/a8e1c538-f06f-498d-8e63-9ea299ebf4e1/dugKs7XOGt.json" id="1" style={{transform: 'translate(5px, 3px)'}} loop autoplay></Player></div>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/06c0091d-1f7a-4af0-bd07-3e604b56ba5d/YNUqgxXc5H.json" id="20" style={{transform: 'translate(0px, -40px)'}} loop autoplay></Player></div>
         </TreeSection>
         <TreeSection>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/7ec47a75-0475-4ed9-bfd9-506e59022a6a/3EjBW6lDaN.json" id="2" style={{transform: 'translate(0px, -60px)', height: '76px', width: '76px'}} loop autoplay></Player></div>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/f2edc222-a1bc-452c-a6aa-8b6e6e8203e5/O6T80BzrjX.json" id="15" style={{transform: 'translate(-10px, -50px)', height: '90.96px', width: '93.5px'}} loop autoplay></Player></div>
-          <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/629f4696-2aae-4713-a6d0-87838d5746f4/FhPlHoa3bY.json" id="8" style={{transform: 'translate(0px, -40px)', height: '75.47px', width: '58.5px'}} loop autoplay></Player></div>
+          <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/e4657509-2322-49d2-ad10-3c790a005c66/LpQNnl5etp.json" id="8" style={{transform: 'translate(0px, -40px)', height: '75.47px', width: '58.5px'}} loop autoplay></Player></div>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/96d129f8-3e05-41f0-8043-d4891ddf6444/H88DGBOEb6.json" id="10" style={{transform: 'translate(-14px, -75px)', height: '80px', width: '75.62px'}} loop autoplay></Player></div>
         </TreeSection>
         <TreeSection>
