@@ -1,6 +1,7 @@
 import { keyframes } from 'styled-components'
 import styled from 'styled-components'
 import img from '../Images/background.png'
+import back from '../Images/background-back.png'
 
 type Wish = {
     id: number,
@@ -24,7 +25,7 @@ const Container = styled.div`
   height: 240px;
   width: 320px;
   text-align: center;
-  animation: ${scale} 2s
+  animation: ${scale} 2s;
 `
 
 const WishCard = ({wish}:{wish:Wish}) =>{
