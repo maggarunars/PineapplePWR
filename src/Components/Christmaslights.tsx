@@ -6,7 +6,7 @@ type Props = {
 
 // Dots for the christmas lights
 const Christmaslights = ({height}:Props) => {
-/* randomizing what colors are on the dots */
+/*Randomizing what colors are on the dots */
 	const colors =[ Green, Blue, Purple, Yellow, Pink, Red ]
 	const Light = colors[Math.floor(Math.random()*colors.length)]
     return (

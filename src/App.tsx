@@ -21,7 +21,7 @@ const Padding = styled.div`
   top: 0;
   width: 100%;
 `
-
+//This is a styled component for the lights at the footer
 const Footer = styled.div`
   background: none;
   height: 72px;
@@ -33,7 +33,7 @@ const Footer = styled.div`
   z-index: -1;
 `
 
-//This is a style component for the Header
+//This is a styled component for the Header
 const Header = styled.h1`
   font-family: "Regular";
   font-size: 40px;
@@ -42,19 +42,19 @@ const Header = styled.h1`
   margin: 0;
   padding: 10;
 `
-
+//This is a styled component for the positioning of the tree as a whole
 const TreeContainer = styled.div` 
   display: flex;
   flex-direction: column;
   align-items: center;  
   overflow: hidden;
 `
-
+//This is a styled component for each "section" of the tree, the 19 is the 1st section, 11/6 are the 2nd section, 23/8/20 are the 3d section, etc.
 const TreeSection = styled.div` 
   display: flex;
   flex-direction: row;  
 `
-
+//Styled component for Santa's hat, which is the logo in the bottom right
 const SantasHat = styled.div`
   position: absolute;
   bottom: 0;
@@ -68,7 +68,7 @@ const Overlay = styled.div`
   position: absolute;
   z-index: 800;
 `
-
+//These are the State functions (?) that allow the packages to open
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenWish = () => {
@@ -79,12 +79,14 @@ function App() {
     setIsOpen(!isOpen);
   };
 
-  // adding lights accross the screen
+  //An array of randomly positioned Christmas lights across the screen
   const lights = new Array(116).fill(undefined)
   const footerLights = new Array (640).fill(undefined)
 
   return (
     <PageContainer>
+
+ {/*Here we're using a map function that itirates over the lights array. The "height" prop on the lights component is set to a random value based on the window's heights. */}      
         {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
         {isOpen && (
           <Overlay onClick={() => handleCloseWish()}>
@@ -94,9 +96,13 @@ function App() {
       <Padding></Padding>
       <Header>Christmas Calendar</Header> 
       <TreeContainer>
-        {/*Here below are the packages, the "id" shows the number on the packages*/}
+        {/*Here below are the packages, the "id" shows the number on the packages.*/}
+        {/*They are imported by Lottie as a json file.*/}
+        {/*Each package has an onClick function so it can be opened*/}
+        {/*We positioned them with styled components (see above) in flex rows, and then used transform:translate to position them exactly how we wanted.*/}
         <TreeSection>
-          <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay></Player></div>
+          <div onClick={() => handleOpenWish()}>
+            <Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay ></Player> </div>
         </TreeSection>
         <TreeSection>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/cb24d26f-5552-4644-8810-90faa9988734/Y2P43K5fyA.json" id="11" style={{transform: 'translate(10px, -20px)', height: '80px', width: '80px'}} loop autoplay></Player></div>
