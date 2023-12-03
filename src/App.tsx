@@ -6,7 +6,7 @@ import Christmaslights from './Components/Christmaslights';
 import SantsHatSvg from './Images/SantasHatSvg.svg'
 import Wishes from './Components/Wishes';
 
-//This is a styled container for the background
+//styled container for the whole page
 const PageContainer = styled.div` 
   background: radial-gradient(#558E47, #17230D);
   height: 100vh;
@@ -14,6 +14,7 @@ const PageContainer = styled.div`
   position: relative;
 `
 
+//styled container for the padding
 const Padding = styled.div`
   background: none;
   height: 48px;
@@ -22,6 +23,47 @@ const Padding = styled.div`
   width: 100%;
 `
 
+//style component for the header
+const Header = styled.h1`
+  font-family: "Regular";
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10;
+`
+
+//styled container for the tree
+const TreeContainer = styled.div` 
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  overflow: hidden;
+`
+
+//styled container for each section of the tree
+const TreeSection = styled.div` 
+  display: flex;
+  flex-direction: row;  
+`
+
+//styled container for the santa hat
+const SantasHat = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+`
+
+//styled container for the overlay when a wish is open
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 800;
+`
+
+//styled container for the footer containing the extra lights
 const Footer = styled.div`
   background: none;
   height: 72px;
@@ -33,43 +75,8 @@ const Footer = styled.div`
   z-index: -1;
 `
 
-//This is a style component for the Header
-const Header = styled.h1`
-  font-family: "Regular";
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 10;
-`
-
-const TreeContainer = styled.div` 
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  overflow: hidden;
-`
-
-const TreeSection = styled.div` 
-  display: flex;
-  flex-direction: row;  
-`
-
-const SantasHat = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-`
-
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  z-index: 800;
-`
-
 function App() {
+  //setting a state to open and close the wishes
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenWish = () => {
     setIsOpen (!isOpen)
@@ -79,13 +86,15 @@ function App() {
     setIsOpen(!isOpen);
   };
 
-  // adding lights accross the screen
+  // adding lights accross the screen, more in the footer
   const lights = new Array(116).fill(undefined)
   const footerLights = new Array (200).fill(undefined)
 
   return (
     <PageContainer>
+        {/*lights randomised and blinking on the page*/}
         {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
+        {/*overlay for the wishes*/}
         {isOpen && (
           <Overlay onClick={() => handleCloseWish()}>
             <Wishes></Wishes>
@@ -94,7 +103,8 @@ function App() {
       <Padding></Padding>
       <Header>Christmas Calendar</Header> 
       <TreeContainer>
-        {/*Here below are the packages, the "id" shows the number on the packages*/}
+        {/*packages/dates to be opened, in a styled div, the "id" shows the number on the packages, onClick function to open the wish*/}
+        {/*split into sections to arrange them in a tree shape*/}
         <TreeSection>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay></Player></div>
         </TreeSection>
@@ -133,8 +143,9 @@ function App() {
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/7436dfbc-f679-427b-861b-451daf26f1ea/aSZsZeEJuc.json" id="7" style={{transform: 'translate(10px, -125px)', height: '86.19px', width: '70.25px'}} loop autoplay></Player></div>
         </TreeSection>
         <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/91057d8f-832d-49eb-a6c7-67ca8e118b09/4K0HchApaR.json" id="12" style={{transform: 'translate(5px, -120px)', height: '105.58px', width: '81px'}} loop autoplay></Player></div>
-        <SantasHat><img src={SantsHatSvg} alt ="Logo of Santa's Hat to access filters"></img></SantasHat>
+        <SantasHat><img src={SantsHatSvg} alt ="Santa's Hat to access filters"></img></SantasHat>
       </TreeContainer>
+      {/*footer containing extra lights*/}
       <Footer>
         {footerLights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*72)}/></div>)}
       </Footer>

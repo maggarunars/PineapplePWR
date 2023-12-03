@@ -1,17 +1,19 @@
+//importing the styles for each colour
 import {Green, Pink, Blue, Yellow, Purple, Red} from './LightStyles'
 
+//making sure we're able to have a varying height (different for page and footer)
 type Props = {
 	height:number
 }
 
-// Dots for the christmas lights
 const Christmaslights = ({height}:Props) => {
-/* randomizing what colors are on the dots */
+	/* randomizing the colours */
 	const colors =[ Green, Blue, Purple, Yellow, Pink, Red ]
 	const Light = colors[Math.floor(Math.random()*colors.length)]
     return (
     	<>
 			<Light
+			/*randomising the positions and blinking times*/
 				$rLeft={Math.floor(Math.random()*window.innerWidth)}
 				$rRight={height}
 				$rTime={Math.random()*4+2}>

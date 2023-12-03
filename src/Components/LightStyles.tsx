@@ -1,11 +1,13 @@
 import styled, {keyframes} from 'styled-components'
 
+//adding the blinking effect
 const blink = keyframes`
     0% { background-color: #FFFFFF; opacity: 0; }
     50% { opacity: 1; }
     100% { opacity: 0; }
 `
 
+//styling the dots
 const Dot = styled.div`
 	position: absolute;
 	width: 8px;
@@ -14,7 +16,7 @@ const Dot = styled.div`
 	/* filter: blur(2px); */
 `
 
-/* colors of the christmas lights */
+//adding each colour to be used
 const Green = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#3E5227;
 	/* below is the line that makes that makes the lights spread randomly accross the screen using the width and height of the screen */

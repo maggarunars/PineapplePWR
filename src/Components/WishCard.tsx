@@ -1,13 +1,14 @@
 import { keyframes } from 'styled-components'
 import styled from 'styled-components'
 import img from '../Images/background.png'
-import back from '../Images/background-back.png'
 
+//making sure to be able to have varying ids and descriptions of the wishes
 type Wish = {
     id: number,
     description: string,
 }
 
+//creating the scale effect
 const scale = keyframes`
     from {
         transform: scale(0.2, 0.2)
@@ -18,6 +19,7 @@ const scale = keyframes`
     }
 `
 
+//styled container for the wishes
 const Container = styled.div`
   background-image: url(${img});
   border-radius: 6px;
@@ -31,6 +33,7 @@ const Container = styled.div`
 const WishCard = ({wish}:{wish:Wish}) =>{
     return(
         <Container>
+            {/*adding the wish in a h2 element with padding*/}
             <h2 style={{paddingTop: '60px'}}>{wish.description}</h2>
         </Container>
     )
