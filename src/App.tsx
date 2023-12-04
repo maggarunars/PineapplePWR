@@ -122,6 +122,7 @@ function App() {
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/f2edc222-a1bc-452c-a6aa-8b6e6e8203e5/O6T80BzrjX.json" id="15" style={{transform: 'translate(-10px, -50px)', height: '90.96px', width: '93.5px'}} autoplay></Player></div>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/629f4696-2aae-4713-a6d0-87838d5746f4/FhPlHoa3bY.json" id="8" style={{transform: 'translate(0px, -40px)', height: '75.47px', width: '58.5px'}} autoplay></Player></div>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/96d129f8-3e05-41f0-8043-d4891ddf6444/H88DGBOEb6.json" id="10" style={{transform: 'translate(-14px, -75px)', height: '80px', width: '75.62px'}} autoplay></Player></div>
+
         </TreeSection>
         <TreeSection>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/d0a5d8c1-fdba-41c0-9572-6d36945591f6/XtzySOONaT.json" id="22" style={{transform: 'translate(50px, -75px)', height: '77px', width: '65.58px'}} autoplay></Player></div>
