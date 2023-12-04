@@ -12,6 +12,7 @@ const PageContainer = styled.div`
   height: 100vh;
   filter: blur();
   position: relative;
+  overflow: hidden;
 `
 
 //styled container for the padding
@@ -31,6 +32,13 @@ const Header = styled.h1`
   text-align: center;
   margin: 0;
   padding: 10;
+
+  @media only screen and (min-width: 1200px) {
+   font-size: 88px;
+  
+  }
+
+
 `
 //This is a styled component for the positioning of the tree as a whole
 const TreeContainer = styled.div` 
@@ -49,6 +57,12 @@ const SantasHat = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
+  margin: 8px;
+
+  @media only screen and (min-width: 1200px) {
+   margin: 40px;
+    
+  }
 `
 
 const Overlay = styled.div`
@@ -70,7 +84,7 @@ const Footer = styled.div`
   overflow: hidden;
   z-index: -1;
 `
-//These are the State functions (?) that allow the packages to open
+//These are the State functions that allow the packages to open
 function App() {
   //setting a state to open and close the wishes
   const [isOpen, setIsOpen] = useState(false);
