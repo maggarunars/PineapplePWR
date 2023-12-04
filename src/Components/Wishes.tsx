@@ -1,14 +1,14 @@
-import { type } from "os";
 import { createClient } from '@supabase/supabase-js';
-import { useEffect,useState } from "react";
-import WishCard from "./WishCard";
-import styled from "styled-components";
+import { useEffect,useState } from 'react';
+import WishCard from './WishCard';
 
+//making sure to be able to have varying ids and descriptions of the wishes
 export type Wish = {
     id: number;
     description: string;
 }
 
+//creating the url and key to be able to access the supabase
 const supabaseUrl = 'https://auhpdielrdyucfnebizd.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1aHBkaWVscmR5dWNmbmViaXpkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDExODE2MzMsImV4cCI6MjAxNjc1NzYzM30.FqBm_Z7BTQk9lNLTx9XblL9mtfl-LnvkCaazFAJKPAw'
 export const supabase = createClient(supabaseUrl, supabaseKey);
@@ -29,6 +29,7 @@ const Wishes = () => {
             .from('Wishes')
             .select();
 
+            //error message if we're unable to fetch a wish
             if (error) {
                 setFetchError('Could not fetch the Wishes');
                 setWishes([]);
@@ -43,14 +44,15 @@ const Wishes = () => {
         fetchWishes();
     }, []);
 
+    //getting a random wish between the length of the wish list
     const getRandomWish = () => {
         const randomIndex = Math.floor(Math.random() * wishes.length);
         return wishes[randomIndex];
     };
 
     return (
-        //template if there error or we have wish it will gave us output, I need to map through wishes.
-        <div className='Wishes' style={{margin: 'auto', position: 'absolute'}}>
+        //getting a random wish in a styled div
+        <div className='Wishes' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
             {fetchError && <p>{fetchError}</p>}
             {wishes.length > 0 && (
                 <div className='Wishes'>
@@ -62,5 +64,3 @@ const Wishes = () => {
 };
 
 export default Wishes;
-
-// seems like I need to have this in App.tsx so I can have <WishesCard key={Wishes.id} --and pass prop-- Wishes{Wishes}
