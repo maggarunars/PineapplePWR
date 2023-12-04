@@ -102,7 +102,7 @@ function App() {
         {/*We positioned them with styled components (see above) in flex rows, and then used transform:translate to position them exactly how we wanted.*/}
         <TreeSection>
           <div onClick={() => handleOpenWish()}>
-            <Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay ></Player> </div>
+            <Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay></Player> </div>
         </TreeSection>
         <TreeSection>
           <div onClick={() => handleOpenWish()}><Player src="https://lottie.host/cb24d26f-5552-4644-8810-90faa9988734/Y2P43K5fyA.json" id="11" style={{transform: 'translate(10px, -20px)', height: '80px', width: '80px'}} loop autoplay></Player></div>
