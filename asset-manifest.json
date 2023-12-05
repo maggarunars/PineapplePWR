@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c1774f81.css",
+    "main.js": "./static/js/main.0263b51a.js",
+    "static/js/787.96ecf59c.chunk.js": "./static/js/787.96ecf59c.chunk.js",
+    "static/media/SantasHatSvg.svg": "./static/media/SantasHatSvg.7ee46f0cdbd484f5cab6973aea94d5d7.svg",
+    "static/media/Analogist.ttf": "./static/media/Analogist.b48060c8e7ab54057ed2.ttf",
+    "static/media/background.png": "./static/media/background.0c75c46b6b586c0482ce.png",
+    "index.html": "./index.html",
+    "main.c1774f81.css.map": "./static/css/main.c1774f81.css.map",
+    "main.0263b51a.js.map": "./static/js/main.0263b51a.js.map",
+    "787.96ecf59c.chunk.js.map": "./static/js/787.96ecf59c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1774f81.css",
+    "static/js/main.0263b51a.js"
+  ]
+}

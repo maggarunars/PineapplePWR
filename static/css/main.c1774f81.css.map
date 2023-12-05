@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.c1774f81.css","mappings":"AACA,WACI,mBAAsB,CACtB,oGAEF","sources":["App.css"],"sourcesContent":["\n@font-face {\n    font-family: \"Regular\"; \n    src: local(\"Analogist\"),\n      url(\"./Fonts/Analogist.ttf\") format(\"truetype\");\n  }\n  \n"],"names":[],"sourceRoot":""}
