@@ -23,7 +23,7 @@ const Padding = styled.div`
   width: 100%;
 `
 
-//style component for the header
+//This is a styled component for the Header
 const Header = styled.h1`
   font-family: "Regular";
   font-size: 40px;
@@ -32,29 +32,25 @@ const Header = styled.h1`
   margin: 0;
   padding: 10;
 `
-
-//styled container for the tree
+//This is a styled component for the positioning of the tree as a whole
 const TreeContainer = styled.div` 
   display: flex;
   flex-direction: column;
   align-items: center;  
   overflow: hidden;
 `
-
-//styled container for each section of the tree
+//This is a styled component for each "section" of the tree, the 19 is the 1st section, 11/6 are the 2nd section, 23/8/20 are the 3d section, etc.
 const TreeSection = styled.div` 
   display: flex;
   flex-direction: row;  
 `
-
-//styled container for the santa hat
+//Styled component for Santa's hat, which is the logo in the bottom right
 const SantasHat = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
 `
 
-//styled container for the overlay when a wish is open
 const Overlay = styled.div`
   width: 100%;
   height: 100%;
@@ -74,7 +70,7 @@ const Footer = styled.div`
   overflow: hidden;
   z-index: -1;
 `
-
+//These are the State functions (?) that allow the packages to open
 function App() {
   //setting a state to open and close the wishes
   const [isOpen, setIsOpen] = useState(false);
@@ -86,12 +82,15 @@ function App() {
     setIsOpen(!isOpen);
   };
 
+  //An array of randomly positioned Christmas lights across the screen
   // adding lights accross the screen, more in the footer
   const lights = new Array(116).fill(undefined)
   const footerLights = new Array (200).fill(undefined)
 
   return (
     <PageContainer>
+
+ {/*Here we're using a map function that itirates over the lights array. The "height" prop on the lights component is set to a random value based on the window's heights. */}      
         {/*lights randomised and blinking on the page*/}
         {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
         {/*overlay for the wishes*/}
@@ -103,6 +102,10 @@ function App() {
       <Padding></Padding>
       <Header>Christmas Calendar</Header> 
       <TreeContainer>
+        {/*Here below are the packages, the "id" shows the number on the packages.*/}
+        {/*They are imported by Lottie as a json file.*/}
+        {/*Each package has an onClick function so it can be opened*/}
+        {/*We positioned them with styled components (see above) in flex rows, and then used transform:translate to position them exactly how we wanted.*/}
         {/*packages/dates to be opened, in a styled div, the "id" shows the number on the packages, onClick function to open the wish*/}
         {/*split into sections to arrange them in a tree shape*/}
         <TreeSection>
