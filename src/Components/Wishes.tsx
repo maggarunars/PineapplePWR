@@ -2,6 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 import { useEffect,useState } from 'react';
 import WishCard from './WishCard';
 
+
 //making sure to be able to have varying ids and descriptions of the wishes
 export type Wish = {
     id: number;
