@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 //Styled container for the background
 export const PageContainer = styled.div` 
   background: radial-gradient(#558E47, #17230D);
@@ -9,7 +8,6 @@ export const PageContainer = styled.div`
   position: relative;
   overflow: hidden;
 `
-
 //Styled component for the Header
 export const Header = styled.h1`
   font-family: "Regular";

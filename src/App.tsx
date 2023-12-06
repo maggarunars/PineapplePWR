@@ -22,12 +22,13 @@ const SantasHat = styled.div`
   bottom: 0;
   right: 0;
   margin: 8px;
-
+//Responsiveness for the title
   @media only screen and (min-width: 1200px) {
-   margin: 40px;
-    
+   margin: 40px;   
   }
 `
+
+//Styled component for when a package is open, the background is overlayed with a darker color for the wishes to pop 
 const Overlay = styled.div`
   width: 100%;
   height: 100%;
@@ -36,9 +37,8 @@ const Overlay = styled.div`
   z-index: 800;
 `
 
-//These are the State functions that allow the packages to open
+//These are the State hooks that allow the packages to open and give us wishes
 function App() {
-  //setting a state to open and close the wishes
   const [isOpen, setIsOpen] = useState(false);
   const handleOpenWish = () => {
     setIsOpen (!isOpen)
@@ -49,7 +49,6 @@ function App() {
   };
 
   //An array of randomly positioned Christmas lights across the screen
-  // adding lights accross the screen, more in the footer
   const lights = new Array(116).fill(undefined)
   const footerLights = new Array (200).fill(undefined)
 
@@ -57,9 +56,8 @@ function App() {
     <PageContainer>
 
  {/*Here we're using a map function that itirates over the lights array. The "height" prop on the lights component is set to a random value based on the window's heights. */}      
-        {/*lights randomised and blinking on the page*/}
         {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
-        {/*overlay for the wishes*/}
+ {/*Overlay behind the Wishes when they appear*/}
         {isOpen && (
           <Overlay onClick={() => handleCloseWish()}>
             <Wishes></Wishes>
@@ -68,12 +66,10 @@ function App() {
       <Padding></Padding>
       <Header>Christmas Calendar</Header> 
       <TreeContainer>
-        {/*Here below are the packages, the "id" shows the number on the packages.*/}
-        {/*They are imported by Lottie as a json file.*/}
-        {/*Each package has an onClick function so it can be opened*/}
-        {/*We positioned them with styled components (see above) in flex rows, and then used transform:translate to position them exactly how we wanted.*/}
-        {/*packages/dates to be opened, in a styled div, the "id" shows the number on the packages, onClick function to open the wish*/}
-        {/*split into sections to arrange them in a tree shape*/}
+{/*Here below are the packages, the "id" shows the number on the packages.*/}
+{/*They are imported by Lottie as a json file.*/}
+{/*Each package has an onClick function so it can be opened*/}
+{/*We positioned them with styled components in flex rows, and then used transform:translate to position them exactly how we wanted in a Tree shape.*/}
         <TreeSection>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} autoplay></Player></div>
         </TreeSection>
@@ -115,7 +111,7 @@ function App() {
         <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/91057d8f-832d-49eb-a6c7-67ca8e118b09/4K0HchApaR.json" id="12" style={{transform: 'translate(5px, -120px)', height: '105.58px', width: '81px'}} loop autoplay></Player></div>
         <SantasHat><img src={SantsHatSvg} alt ="Santa's Hat to access filters"></img></SantasHat>
       </TreeContainer>
-      {/*footer containing extra lights*/}
+{/*Footer containing extra lights*/}
       <Footer>
         {footerLights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*72)}/></div>)}
       </Footer>
