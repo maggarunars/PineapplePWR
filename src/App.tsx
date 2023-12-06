@@ -5,51 +5,16 @@ import './App.css'
 import Christmaslights from './Components/Christmaslights';
 import SantsHatSvg from './Images/SantasHatSvg.svg';
 import Wishes from './Components/Wishes';
+import { PageContainer, Header, TreeContainer, TreeSection } from './Components/TreeStyles';
+import { Footer } from './Components/FooterStyles';
 
-//styled container for the whole page
-const PageContainer = styled.div` 
-  background: radial-gradient(#558E47, #17230D);
-  height: 100vh;
-  filter: blur();
-  position: relative;
-  overflow: hidden;
-`
-
-//styled container for the padding
+//Styled container for the padding
 const Padding = styled.div`
   background: none;
   height: 48px;
   position: static;
   top: 0;
   width: 100%;
-`
-
-//This is a styled component for the Header
-const Header = styled.h1`
-  font-family: "Regular";
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 10;
-
-  @media only screen and (min-width: 1200px) {
-   font-size: 88px;
-  
-  }
-
-`
-//This is a styled component for the positioning of the tree as a whole
-const TreeContainer = styled.div` 
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  overflow: hidden;
-`
-//This is a styled component for each "section" of the tree, the 19 is the 1st section, 11/6 are the 2nd section, 23/8/20 are the 3d section, etc.
-const TreeSection = styled.div` 
-  display: flex;
-  flex-direction: row;  
 `
 //Styled component for Santa's hat, which is the logo in the bottom right
 const SantasHat = styled.div`
@@ -63,7 +28,6 @@ const SantasHat = styled.div`
     
   }
 `
-
 const Overlay = styled.div`
   width: 100%;
   height: 100%;
@@ -72,17 +36,6 @@ const Overlay = styled.div`
   z-index: 800;
 `
 
-//styled container for the footer containing the extra lights
-const Footer = styled.div`
-  background: none;
-  height: 72px;
-  filter: blur();
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1;
-`
 //These are the State functions that allow the packages to open
 function App() {
   //setting a state to open and close the wishes
