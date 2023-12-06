@@ -99,7 +99,7 @@ function App() {
   //An array of randomly positioned Christmas lights across the screen
   // adding lights accross the screen, more in the footer
   const lights = new Array(116).fill(undefined)
-  const footerLights = new Array (200).fill(undefined)
+  const footerLights = new Array (160).fill(undefined)
 
   return (
     <PageContainer>
