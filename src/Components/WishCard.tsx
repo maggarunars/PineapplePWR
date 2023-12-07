@@ -20,7 +20,7 @@ const scale = keyframes`
 `
 
 //styled container for the wishes
-const Container = styled.div`
+const WishContainer = styled.div`
   background-image: url(${img});
   border-radius: 6px;
   z-index: 900;
@@ -32,10 +32,10 @@ const Container = styled.div`
 
 const WishCard = ({wish}:{wish:Wish}) =>{
     return(
-        <Container>
+        <WishContainer>
             {/*adding the wish in a h2 element with padding*/}
             <h2 style={{paddingTop: '60px'}}>{wish.description}</h2>
-        </Container>
+        </WishContainer>
     )
 }
 

@@ -39,7 +39,6 @@ const Wishes = () => {
             if (data) {
                 setWishes(data);
                 setFetchError('');
-                console.log(data);
             }
         };
         fetchWishes();
