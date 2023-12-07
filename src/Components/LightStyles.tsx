@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
+//creating the blinking effect
 const blink = keyframes`
     0% { background-color: #FFFFFF; opacity: 0; }
     50% { opacity: 1; }
@@ -15,7 +16,7 @@ const Dot = styled.div`
 	/* filter: blur(2px); */
 `
 
-//adding each colour to be used
+//adding each colour to be used and making the blinking effect random for each dot
 const Green = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#3E5227;
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
