@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css'
-import Christmaslights from './Components/Christmaslights';
+import ChristmasLights from './Components/Christmaslights';
 import SantaHatSvg from './Images/SantasHatSvg.svg';
 import Activities from './Components/Activities';
 import { PageContainer, Padding, Header, TreeContainer, TreeSection, SantasHat, Footer, Overlay } from './Components/PageStyles';
@@ -28,7 +28,7 @@ function App() {
     <ActivityProvider value={activityContextValue}>
       <PageContainer>
       {/*Here we're using a map function that itirates over the lights array. The "height" prop on the lights component is set to a random value based on the window's height. */}      
-          {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
+          {lights.map((light, i)=><div key={i}><ChristmasLights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
           {/*Overlay behind the Activities when they appear*/}
           {isOpen && (
             <Overlay onClick={() => handleCloseActivity()}>
@@ -252,7 +252,7 @@ function App() {
         </TreeContainer>
         {/*footer containing extra lights*/}
         <Footer>
-          {footerLights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*72)}/></div>)}
+          {footerLights.map((light, i)=><div key={i}><ChristmasLights height={Math.floor(Math.random()*72)}/></div>)}
         </Footer>
       </PageContainer>
     </ActivityProvider>

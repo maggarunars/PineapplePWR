@@ -6,7 +6,7 @@ type Props = {
 	height:number
 }
 
-const Christmaslights = ({height}:Props) => {
+const ChristmasLights = ({height}:Props) => {
 	/* randomizing the colours */
 	const colors =[ Green, Blue, Purple, Yellow, Pink, Red ]
 	const Light = colors[Math.floor(Math.random()*colors.length)]
@@ -23,4 +23,4 @@ const Christmaslights = ({height}:Props) => {
     )
 }
 
-export default Christmaslights;
+export default ChristmasLights;
