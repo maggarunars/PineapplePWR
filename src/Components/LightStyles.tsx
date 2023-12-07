@@ -19,7 +19,7 @@ const Dot = styled.div`
 //adding each colour to be used
 const Green = styled(Dot)<{ $rLeft?: number; $rRight?: number; $rTime?: number }>`
 	background-color:#3E5227;
-	/* below is the line that makes that makes the lights spread randomly accross the screen using the width and height of the screen */
+/* below is the line that makes that makes the lights spread randomly accross the screen using the width and height of the screen */
 	transform: translate(${props => props.$rLeft}px, ${props => props.$rRight}px);
 	animation: ${blink} ${props => props.$rTime}s linear infinite;
 `
