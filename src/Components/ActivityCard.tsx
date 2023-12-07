@@ -2,8 +2,8 @@ import { keyframes } from 'styled-components'
 import styled from 'styled-components'
 import img from '../Images/background.png'
 
-//making sure to be able to have varying ids and descriptions of the wishes
-type Wish = {
+//making sure to be able to have varying ids and descriptions of the activities
+type Activity = {
     id: number,
     description: string,
 }
@@ -19,8 +19,8 @@ const scale = keyframes`
     }
 `
 
-//styled container for the wishes
-const Container = styled.div`
+//styled container for the activities
+const ActivityContainer = styled.div`
   background-image: url(${img});
   border-radius: 6px;
   z-index: 900;
@@ -30,13 +30,13 @@ const Container = styled.div`
   animation: ${scale} 2s;
 `
 
-const WishCard = ({wish}:{wish:Wish}) =>{
+const ActivityCard = ({activity}:{activity:Activity}) =>{
     return(
-        <Container>
-            {/*adding the wish in a h2 element with padding*/}
-            <h2 style={{paddingTop: '60px'}}>{wish.description}</h2>
-        </Container>
+        <ActivityContainer>
+            {/*adding the activity in a h2 element with padding*/}
+            <h2 style={{paddingTop: '60px'}}>{activity.description}</h2>
+        </ActivityContainer>
     )
 }
 
-export default WishCard;
+export default ActivityCard;
