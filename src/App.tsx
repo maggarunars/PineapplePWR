@@ -1,41 +1,10 @@
 import { Player } from '@lottiefiles/react-lottie-player'
-import styled from 'styled-components';
-import { useState, CSSProperties } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Christmaslights from './Components/Christmaslights';
-import SantsHatSvg from './Images/SantasHatSvg.svg';
+import SantaHatSvg from './Images/SantasHatSvg.svg';
 import Wishes from './Components/Wishes';
-import { PageContainer, Header, TreeContainer, TreeSection } from './Components/TreeStyles';
-import { Footer } from './Components/FooterStyles';
-
-//Styled container for the padding
-const Padding = styled.div`
-  background: none;
-  height: 48px;
-  position: static;
-  top: 0;
-  width: 100%;
-`
-//Styled component for Santa's hat, which is the logo in the bottom right
-const SantasHat = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 8px;
-//Responsiveness for the title
-  @media only screen and (min-width: 1200px) {
-   margin: 40px;   
-  }
-`
-
-//Styled component for when a package is open, the background is overlayed with a darker color for the wishes to pop 
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  z-index: 800;
-`
+import { PageContainer, Padding, Header, TreeContainer, TreeSection, SantasHat, Footer, Overlay } from './Components/PageStyles';
 
 //These are the State hooks that allow the packages to open and give us wishes
 function App() {
@@ -54,10 +23,9 @@ function App() {
 
   return (
     <PageContainer>
-
- {/*Here we're using a map function that itirates over the lights array. The "height" prop on the lights component is set to a random value based on the window's heights. */}      
+    {/*Here we're using a map function that itirates over the lights array. The "height" prop on the lights component is set to a random value based on the window's heights. */}      
         {lights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*window.innerHeight)}/></div>)}
- {/*Overlay behind the Wishes when they appear*/}
+        {/*Overlay behind the Wishes when they appear*/}
         {isOpen && (
           <Overlay onClick={() => handleCloseWish()}>
             <Wishes></Wishes>
@@ -66,12 +34,12 @@ function App() {
       <Padding></Padding>
       <Header>Christmas Calendar</Header> 
       <TreeContainer>
-{/*Here below are the packages, the "id" shows the number on the packages.*/}
-{/*They are imported by Lottie as a json file.*/}
-{/*Each package has an onClick function so it can be opened*/}
-{/*We positioned them with styled components in flex rows, and then used transform:translate to position them exactly how we wanted in a Tree shape.*/}
+      {/*Here below are the packages, the "id" shows the number on the packages.*/}
+      {/*They are imported by Lottie as a json file.*/}
+      {/*Each package has an onClick function so it can be opened*/}
+      {/*We positioned them with styled components in flex rows, and then used transform:translate to position them exactly how we wanted in a Tree shape.*/}
         <TreeSection>
-          <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} autoplay></Player></div>
+          <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/5c7de76b-7a6f-4a67-8f4f-ae878afc9920/21YjodIAg1.json" id="19" style={{transform: 'translate(0px, 0px)', height: '100px', width: '100px'}} loop autoplay></Player></div>
         </TreeSection>
         <TreeSection>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/cb24d26f-5552-4644-8810-90faa9988734/Y2P43K5fyA.json" id="11" style={{transform: 'translate(10px, -20px)', height: '80px', width: '80px'}} loop autoplay></Player></div>
@@ -87,7 +55,6 @@ function App() {
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/f2edc222-a1bc-452c-a6aa-8b6e6e8203e5/O6T80BzrjX.json" id="15" style={{transform: 'translate(-10px, -50px)', height: '90.96px', width: '93.5px'}} loop autoplay></Player></div>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/e4657509-2322-49d2-ad10-3c790a005c66/LpQNnl5etp.json" id="1" style={{transform: 'translate(0px, -40px)', height: '75.47px', width: '58.5px'}} loop autoplay></Player></div>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/96d129f8-3e05-41f0-8043-d4891ddf6444/H88DGBOEb6.json" id="10" style={{transform: 'translate(-14px, -75px)', height: '80px', width: '75.62px'}} autoplay></Player></div>
-
         </TreeSection>
         <TreeSection>
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/d0a5d8c1-fdba-41c0-9572-6d36945591f6/XtzySOONaT.json" id="22" style={{transform: 'translate(50px, -75px)', height: '77px', width: '65.58px'}} loop autoplay></Player></div>
@@ -109,9 +76,9 @@ function App() {
           <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/7436dfbc-f679-427b-861b-451daf26f1ea/aSZsZeEJuc.json" id="7" style={{transform: 'translate(10px, -125px)', height: '86.19px', width: '70.25px'}} loop autoplay></Player></div>
         </TreeSection>
         <div style={{cursor: 'grab'}} onClick={() => handleOpenWish()}><Player src="https://lottie.host/91057d8f-832d-49eb-a6c7-67ca8e118b09/4K0HchApaR.json" id="12" style={{transform: 'translate(5px, -120px)', height: '105.58px', width: '81px'}} loop autoplay></Player></div>
-        <SantasHat><img src={SantsHatSvg} alt ="Santa's Hat to access filters"></img></SantasHat>
+        <SantasHat><img src={SantaHatSvg} alt ="Santa's Hat to access filters"></img></SantasHat>
       </TreeContainer>
-{/*Footer containing extra lights*/}
+      {/*Footer containing extra lights*/}
       <Footer>
         {footerLights.map((light, i)=><div key={i}><Christmaslights height={Math.floor(Math.random()*72)}/></div>)}
       </Footer>

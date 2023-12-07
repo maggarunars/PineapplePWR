@@ -4,7 +4,6 @@ import {Green, Pink, Blue, Yellow, Purple, Red} from './LightStyles'
 //making sure we're able to have a varying height (different for page and footer)
 type Props = {
 	height:number
-	
 }
 
 const Christmaslights = ({height}:Props) => {

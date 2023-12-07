@@ -16,13 +16,13 @@ export const supabase = createClient(supabaseUrl, supabaseKey);
 
 const Wishes = () => {
 //we need two pieces of state, one to store wishes ones we fetch them and the errors if there are any when we fetch
-// values of the const - error and function to update it. Null to begin with.
+//values of the const - error and function to update it. Null to begin with.
     const[fetchError, setFetchError] = useState('');
     const [wishes, setWishes] = useState<Array<Wish>>([]);
-// we now fetch the data, we use useEffect Hook - fires function when the componentfirst renders.It fires straightaway and fetch data.
-// second argument needs to be an empty array for dependencies, we only wants this to fire once
+//we now fetch the data, we use useEffect Hook - fires function when the componentfirst renders.It fires straightaway and fetch data.
+//second argument needs to be an empty array for dependencies, we only wants this to fire once
 //inside create asyncronous function
-// data got from Wishes table and we want to get all data so we pass blank (), meaning no arguments, it will fetch all the data for us
+//data got from Wishes table and we want to get all data so we pass blank (), meaning no arguments, it will fetch all the data for us
 
     useEffect(() => {
         const fetchWishes = async () => {
@@ -35,7 +35,7 @@ const Wishes = () => {
                 setFetchError('Could not fetch the Wishes');
                 setWishes([]);
                 console.log(error);
-            }
+            } 
             if (data) {
                 setWishes(data);
                 setFetchError('');
